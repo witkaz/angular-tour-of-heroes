@@ -9,8 +9,9 @@ import { HeroService } from '../../core/services/hero/hero.service';
   styleUrls: ['./heroes.component.scss']
 })
 export class HeroesComponent implements OnInit {
-  public heroes: Hero[];
   public selectedHero: Hero;
+  public heroes: Hero[];
+
   constructor(private heroService: HeroService) { }
 
   ngOnInit() {
